@@ -16,14 +16,18 @@ manage.py celery worker --loglevel=DEBUG
 manage.py runserver
 ```
 3. Go to  http://127.0.0.1:8000/ 
-# Note
-Default settings is production  
+# Notes
+1. Default settings is production  
 ```
 #settings.__inti__.py
 from .production_settings import * #settings for smtp backend and RabbitMq broker
 #from .local_settings import * #settings for file based mail backend and DB broker
 ```
-
+2. For authnticated requests set JWT token to Authorization header
+```
+#example
+Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJ1c2VybmFtZSI6InRlc3QxIiwiZXhwIjoxNTAwODM3NzM2LCJlbWFpbCI6InRlc3QxQGdtYWlsLmNvbSJ9.3U8tz5S2NZ3acOG-DukxB16egWPtpr4vi4oG7wOXetI
+```
 
 
 
