@@ -1,0 +1,8 @@
+Django==1.11.3
+django_rest_auth==0.9.1
+django_allauth==0.32.0
+django_celery==3.2.1
+djangorestframework==3.6.3
+djangorestframework-jwt==1.11.0
+kombu==3.0.37
+pytz==2017.2
