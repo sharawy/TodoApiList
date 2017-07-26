@@ -11,6 +11,7 @@ class TodoTaskSerializer(serializers.ModelSerializer):
         model = TodoTask
         exclude = ('celery_task_id',)
 
+
 class CustomLoginSerializer(LoginSerializer):
     username = serializers.CharField(required=True)
     email =None

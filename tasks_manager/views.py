@@ -1,8 +1,7 @@
 from rest_framework import viewsets
-from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticated
 from tasks_manager.models import TodoTask
 from tasks_manager.serializers import TodoTaskSerializer
-from rest_auth.views import LoginView
 
 class TasksViewSet(viewsets.ModelViewSet):
     """
