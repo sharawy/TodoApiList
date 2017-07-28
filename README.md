@@ -2,9 +2,15 @@
 Simple django rest application with celery integration
 # Requirements
 1. Installing RabbitMq broker :https://www.rabbitmq.com/download.html
-2. run command 
+2. run commands
 ```
 Pip install -r requirments.txt
+```
+```
+manage.py makemigrations
+```
+```
+manage.py migrate
 ```
 # How to run
 1. Run celery worker instance:
