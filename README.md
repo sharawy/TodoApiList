@@ -25,7 +25,7 @@ manage.py runserver
 # Notes
 1. Default settings is production  
 ```
-#settings.__inti__.py
+#settings.__init__.py
 from .production_settings import * #settings for smtp backend and RabbitMq broker
 #from .local_settings import * #settings for file based mail backend and DB broker
 ```
